@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Tingkat Dinitrogen Dioksida</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i">
+    
+</head>
+
+<body style="background: linear-gradient(-34deg, rgba(45,85,52,0.76) 25%, rgba(17,42,29,0.56)), url(&quot;assets/img/begron1.jpg&quot;);">
+    <h2 class="text-center text-white d-none d-lg-block site-heading"><span class="text-success site-heading-upper mb-3" style="color: rgb(8, 65, 18);font-size: 30px;">Tingkat Dinitrogen Oksida di Atmosfer&nbsp;</span><span class="text-white site-heading-lower" style="font-size: 50px;">Dari Tahun ke Tahun</span></h2>
+    <section class="page-section cta" style="background: rgba(26,59,23,0.76);border-style: none;">
+        <div class="container">
+            <div class="row" style="border-style: none;">
+                <div class="col-xl-9 mx-auto" style="width: 954px;border-style: none;">
+                    <div class="text-center cta-inner rounded" style="background: rgba(255, 255, 255, 0.85);">
+                        <h2 class="section-heading mb-4"><span class="section-heading-upper">Pilih Tahun untuk mengetahui Tingkat Dinitrogen Oksida </span><span class="section-heading-lower" style="font-size: 30px;">(2001-2020)</span></h2>
+                        <script>
+                            function tampilkan(){
+                            
+                              var Pilih_Tahun=document.getElementById("form1").select1.value;
+                              var p_kontainer=document.getElementById("container");
+                              fetch('https://global-warming.org/api/nitrous-oxide-api')
+                             
+                              if (Pilih_Tahun=="1")
+                                {
+                                    fetch('https://global-warming.org/api/nitrous-oxide-api')
+                                    .then(response => response.json())
+                                    .then(data =>
+                                    p_kontainer.innerHTML= ("Tingkat Dinitrogen Oksida Pada Tahun 2001" + "<br>"+"Tertinggi : " + data.nitrous[9].average + "<br>" 
+                                    + "Terendah : "+ data.nitrous[1].average));;
+                                }
+                              else if (Pilih_Tahun=="2")
+                                {
+                                    fetch('https://global-warming.org/api/nitrous-oxide-api')
+                                    .then(response => response.json())
+                                    .then(data =>
+                                    p_kontainer.innerHTML=("Tingkat Dinitrogen Oksida Pada Tahun 2002" + "<br>"+"Tertinggi : " + data.nitrous[21].average + "<br>" 
+                                    + "Terendah : "+ data.nitrous[15].average));;
+                                }
+                              else if (Pilih_Tahun=="3")
+                                {
+                                    fetch('https://global-warming.org/api/nitrous-oxide-api')
+                                    .then(response => response.json())
+                                    .then(data =>
+                                    p_kontainer.innerHTML=("Tingkat Dinitrogen Oksida Pada Tahun 2003" + "<br>"+"Tertinggi : " + data.nitrous[33].average + "<br>" 
+                                    + "Terendah : "+ data.nitrous[22].average));;
+                                }
+                                else if (Pilih_Tahun=="4")
+                                {
+                                    fetch('https://global-warming.org/api/nitrous-oxide-api')
+                                    .then(response => response.json())
+                                    .then(data =>
+                                    p_kontainer.innerHTML=("Tingkat Dinitrogen Oksida Pada Tahun 2004" + "<br>"+"Tertinggi : " + data.nitrous[45].average + "<br>" 
+                                    + "Terendah : "+ data.nitrous[40].average));;
+                                }
+                                else if (Pilih_Tahun=="5")
+                                {
+                                    fetch('https://global-warming.org/api/nitrous-oxide-api')
+                                    .then(response => response.json())
+                                    .then(data =>
+                                    p_kontainer.innerHTML=("Tingkat Dinitrogen Oksida Pada Tahun 2005" + "<br>"+"Tertinggi : " + data.nitrous[57].average + "<br>" 
+                                    + "Terendah : "+ data.nitrous[51].average));;
+                                }
+                                else if (Pilih_Tahun=="6")
+                                {
+                                    fetch('https://global-warming.org/api/nitrous-oxide-api')
+                                    .then(response => response.json())
+                                    .then(data =>
+                                    p_kontainer.innerHTML=("Tingkat Dinitrogen Oksida Pada Tahun 2006" + "<br>"+"Tertinggi : " + data.nitrous[69].average + "<br>" 
+                                    + "Terendah : "+ data.nitrous[64].average));;
+                                }
+                                else if (Pilih_Tahun=="7")
+                                {
+                                    fetch('https://global-warming.org/api/nitrous-oxide-api')
+                                    .then(response => response.json())
+                                    .then(data =>
+                                    p_kontainer.innerHTML=("Tingkat Dinitrogen Oksida Pada Tahun 2007" + "<br>"+"Tertinggi : " + data.nitrous[81].average + "<br>" 
+                                    + "Terendah : "+ data.nitrous[77].average));;
+                                }
+                                else if (Pilih_Tahun=="8")
+                                {
+                                    fetch('https://global-warming.org/api/nitrous-oxide-api')
+                                    .then(response => response.json())
+                                    .then(data =>
+                                    p_kontainer.innerHTML=("Tingkat Dinitrogen Oksida Pada Tahun 2008" + "<br>"+"Tertinggi : " + data.nitrous[93].average + "<br>" 
+                                    + "Terendah : "+ data.nitrous[82].average));;
+                                }
+                                else if (Pilih_Tahun=="9")
+                                {
+                                    fetch('https://global-warming.org/api/nitrous-oxide-api')
+                                    .then(response => response.json())
+                                    .then(data =>
+                                    p_kontainer.innerHTML=("Tingkat Dinitrogen Oksida Pada Tahun 2009" + "<br>"+"Tertinggi : " + data.nitrous[105].average + "<br>" 
+                                    + "Terendah : "+ data.nitrous[99].average));;
+                                }
+                                else if (Pilih_Tahun=="10")
+                                {
+                                    fetch('https://global-warming.org/api/nitrous-oxide-api')
+                                    .then(response => response.json())
+                                    .then(data =>
+                                    p_kontainer.innerHTML=("Tingkat Dinitrogen Oksida Pada Tahun 2010" + "<br>"+"Tertinggi : " + data.nitrous[117].average + "<br>" 
+                                    + "Terendah : "+ data.nitrous[106].average));;
+                                }
+                                else if (Pilih_Tahun=="11")
+                                {
+                                    fetch('https://global-warming.org/api/nitrous-oxide-api')
+                                    .then(response => response.json())
+                                    .then(data =>
+                                    p_kontainer.innerHTML=("Tingkat Dinitrogen Oksida Pada Tahun 2011" + "<br>"+"Tertinggi : " + data.nitrous[129].average + "<br>" 
+                                    + "Terendah : "+ data.nitrous[123].average));;
+                                }
+                                else if (Pilih_Tahun=="12")
+                                {
+                                    fetch('https://global-warming.org/api/nitrous-oxide-api')
+                                    .then(response => response.json())
+                                    .then(data =>
+                                    p_kontainer.innerHTML=("Tingkat Dinitrogen Oksida Pada Tahun 2012" + "<br>"+"Tertinggi : " + data.nitrous[141].average + "<br>" 
+                                    + "Terendah : "+ data.nitrous[136].average));;
+                                }
+                                else if (Pilih_Tahun=="13")
+                                {
+                                    fetch('https://global-warming.org/api/nitrous-oxide-api')
+                                    .then(response => response.json())
+                                    .then(data =>
+                                    p_kontainer.innerHTML=("Tingkat Dinitrogen Oksida Pada Tahun 2013" + "<br>"+"Tertinggi : " + data.nitrous[153].average + "<br>" 
+                                    + "Terendah : "+ data.nitrous[142].average));;
+                                }
+                                else if (Pilih_Tahun=="14")
+                                {
+                                    fetch('https://global-warming.org/api/nitrous-oxide-api')
+                                    .then(response => response.json())
+                                    .then(data =>
+                                    p_kontainer.innerHTML=("Tingkat Dinitrogen Oksida Pada Tahun 2014" + "<br>"+"Tertinggi : " + data.nitrous[165].average + "<br>" 
+                                    + "Terendah : "+ data.nitrous[154].average));;
+                                }
+                                else if (Pilih_Tahun=="15")
+                                {
+                                    fetch('https://global-warming.org/api/nitrous-oxide-api')
+                                    .then(response => response.json())
+                                    .then(data =>
+                                    p_kontainer.innerHTML=("Tingkat Dinitrogen Oksida Pada Tahun 2015" + "<br>"+"Tertinggi : " + data.nitrous[177].average + "<br>" 
+                                    + "Terendah : "+ data.nitrous[170].average));;
+                                }
+                                else if (Pilih_Tahun=="16")
+                                {
+                                    fetch('https://global-warming.org/api/nitrous-oxide-api')
+                                    .then(response => response.json())
+                                    .then(data =>
+                                    p_kontainer.innerHTML=("Tingkat Dinitrogen Oksida Pada Tahun 2016" + "<br>"+"Tertinggi : " + data.nitrous[189].average + "<br>" 
+                                    + "Terendah : "+ data.nitrous[178].average));;
+                                }
+                                else if (Pilih_Tahun=="17")
+                                {
+                                    fetch('https://global-warming.org/api/nitrous-oxide-api')
+                                    .then(response => response.json())
+                                    .then(data =>
+                                    p_kontainer.innerHTML=("Tingkat Dinitrogen Oksida Pada Tahun 2017" + "<br>"+"Tertinggi : " + data.nitrous[201].average + "<br>" 
+                                    + "Terendah : "+ data.nitrous[190].average));;
+                                }
+                                else if (Pilih_Tahun=="18")
+                                {
+                                    fetch('https://global-warming.org/api/nitrous-oxide-api')
+                                    .then(response => response.json())
+                                    .then(data =>
+                                    p_kontainer.innerHTML=("Tingkat Dinitrogen Oksida Pada Tahun 2018" + "<br>"+"Tertinggi : " + data.nitrous[213].average + "<br>" 
+                                    + "Terendah : "+ data.nitrous[202].average));;
+                                }
+                                else if (Pilih_Tahun=="19")
+                                {
+                                    fetch('https://global-warming.org/api/nitrous-oxide-api')
+                                    .then(response => response.json())
+                                    .then(data =>
+                                    p_kontainer.innerHTML=("Tingkat Dinitrogen Oksida Pada Tahun 2019" + "<br>"+"Tertinggi : " + data.nitrous[225].average + "<br>" 
+                                    + "Terendah : "+ data.nitrous[217].average));;
+                                }
+                                else if (Pilih_Tahun=="20")
+                                {
+                                    fetch('https://global-warming.org/api/nitrous-oxide-api')
+                                    .then(response => response.json())
+                                    .then(data =>
+                                    p_kontainer.innerHTML=("Tingkat Dinitrogen Oksida Pada Tahun 2020" + "<br>"+"Tertinggi : " + data.nitrous[237].average + "<br>" 
+                                    + "Terendah : "+ data.nitrous[226].average));;
+                                }
+                                else if (Pilih_Tahun=="0")
+                                {
+                                    alert("Pilih Tahun antara 2001-2020");
+                                }
+                            }
+                            </script>
+                                                           
+                            <form id="form1" name="form1" onsubmit="return false">
+                              <label for="select1"></label>
+                              
+                              <select id="select1" class="form-control-sm" name="select1" style="background: rgb(51,164,69);color: rgb(245,244,244);border-style: none;">
+                                <option selected value="0">Pilih Tahun</option>
+                                <option value="1">2001</option>
+                                <option value="2">2002</option>
+                                <option value="3">2003</option>
+                                <option value="4">2004</option>
+                                <option value="5">2005</option>
+                                <option value="6">2006</option>
+                                <option value="7">2007</option>
+                                <option value="8">2008</option>
+                                <option value="9">2009</option>
+                                <option value="10">2010</option>
+                                <option value="11">2011</option>
+                                <option value="12">2012</option>
+                                <option value="13">2013</option>
+                                <option value="14">2014</option>
+                                <option value="15">2015</option>
+                                <option value="16">2016</option>
+                                <option value="17">2017</option>
+                                <option value="18">2018</option>
+                                <option value="19">2019</option>
+                                <option value="20">2020</option>
+                              </select>
+                              <input type="submit" value="Tampilkan" class="btn btn-primary" style="background: rgb(0,67,11);border-style: none;" onclick="tampilkan()">
+                            </form>
+                             
+                            <p id="container"></p>
+                            
+                </div>
+                <div class="row">
+                <div class="col-sm-4">
+                    <div class="card mb-5 text-center" style="background: rgb(51,164,69);color: rgb(245,244,244);border-style:none; width: 250.600px;">
+                        <h4 class="card-title">Tahun 2001</h4>
+                        <p class="card-text" id="2001" style="margin: 14px;"></p>
+                    </div>
+                    </div>
+                <div class="col-sm-4">
+                    <div class="card mb-5 text-center" style="background: rgb(51,164,69);color: rgb(245,244,244);border-style: none; width: 250.600px;">
+                        <h4 class="card-title">Tahun 2010</h4>
+                        <p class="card-text" id="2010" style="margin: 14px;"></p>
+                    </div>
+                    </div>
+                    <div class="col-sm-4">
+                    <div class="card mb-5 text-center" style="background: rgb(51,164,69);color: rgb(245,244,244);border-style: none; width: 250.600px;">
+                        <h4 class="card-title">Tahun 2020</h4>
+                        <p class="card-text" id="2020" style="margin: 14px;"></p>
+                    </div>
+                    </div>
+                </div>
+                <script>
+                    fetch('https://global-warming.org/api/nitrous-oxide-api')
+                    .then(response => response.json())
+                    .then(data => 
+                    document.getElementById("2001").innerHTML =("Tingkat Dinitrogen Oksida Pada Tahun 2001" + "<br>"+"Tertinggi : " + data.nitrous[9].average + "<br>" 
+                    + "Terendah : "+ data.nitrous[1].average));;
+                    fetch('https://global-warming.org/api/nitrous-oxide-api')
+                    .then(response => response.json())
+                    .then(data => 
+                    document.getElementById("2010").innerHTML =("Tingkat Dinitrogen Oksida Pada Tahun 2010" + "<br>"+"Tertinggi : " + data.nitrous[117].average + "<br>" 
+                    + "Terendah : "+ data.nitrous[106].average));;
+                    fetch('https://global-warming.org/api/nitrous-oxide-api')
+                    .then(response => response.json())
+                    .then(data => 
+                    document.getElementById("2020").innerHTML =("Tingkat Dinitrogen Oksida Pada Tahun 2020" + "<br>"+"Tertinggi : " + data.nitrous[237].average + "<br>" 
+                    + "Terendah : "+ data.nitrous[226].average));;
+                </script>
+        </div>
+        </section>
+        
+    
+    <footer class="text-center footer text-faded py-5" style="background: rgba(0,67,11,0.63);">
+        <div class="container">
+            <p class="m-0 small">Copyright&nbsp;©&nbsp;UAS Bahasa Pemrograman | Vennina</p>
+        </div>
+    </footer>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/current-day.js"></script>
+    <script src="assets/js/dropdown-search-bs4.js"></script>
+</body>
+
+</html>
